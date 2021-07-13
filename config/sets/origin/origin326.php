@@ -23,12 +23,12 @@ use Symplify\SymfonyPhpConfig\ValueObjectInliner;
 use Rector\Renaming\Rector\MethodCall\RenameMethodRector;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 
+/**
+ * VERSION: 3.26.0
+ */
 return static function (ContainerConfigurator $containerConfigurator): void {
     $services = $containerConfigurator->services();
 
-    # Must be in ASENDING ORDER to be future proof
-
-    # VERSION: 3.26.0
     $services->set(RenameMethodRector::class)
         ->call('configure', [[RenameMethodRector::METHOD_CALL_RENAMES => ValueObjectInliner::inline([
             # Background Process
