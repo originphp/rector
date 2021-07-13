@@ -1,8 +1,8 @@
-# OriginPHP Rector Sets (Alpha)
+# Rector Rules for OriginPHP
 
-This includes `rector` rules from version `3.26` to help with refactoring code.
+This is a new package for helping upgrading and automatically refactoring your application from OriginPHP version 3.26.
 
-Usage
+## Usage
 
 Inside your application directory
 
