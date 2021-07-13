@@ -1,0 +1,31 @@
+{
+  "name": "originphp/rector",
+  "description": "OriginPHP Rector Rules",
+  "type": "library",
+  "keywords": [
+    "originphp",
+    "rector"
+  ],
+  "homepage": "https://www.originphp.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jamiel Sharief",
+      "email": "js@originphp.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Origin\\Rector\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Origin\\Test\\Rector\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=7.3.0",
+    "rector/rector": "^0.11.36"
+  }
+}
